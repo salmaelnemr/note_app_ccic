@@ -24,8 +24,8 @@ class AppAppBar extends StatelessWidget implements PreferredSizeWidget{
       leading: enableBackButton ? AppIconButton(
           onTap: () => RouteUtils.pop(),
           icon: FontAwesomeIcons.chevronLeft,
-          padding: EdgeInsets.only(left: 16),
-      ): SizedBox.shrink(),
+          padding: const EdgeInsets.only(left: 16),
+      ): const SizedBox.shrink(),
       leadingWidth: enableBackButton ? 50.width +16 : 0,
       title: AppText(
         title: title ?? "",

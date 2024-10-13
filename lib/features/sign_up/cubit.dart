@@ -34,7 +34,7 @@ class SignUpCubit extends Cubit<SignUpStates> {
       await CachingUtils.cacheUser(response.data);
       emit(SignUpInit());
       RouteUtils.pushAndPopAll(
-        HomeView(),
+        const HomeView(),
       );
     } on DioException catch (e) {
       showSnackBar(

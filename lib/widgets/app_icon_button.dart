@@ -26,14 +26,14 @@ class AppIconButton extends StatelessWidget {
           child: Container(
             width: 50.w,
             height: 50.h,
-            child: Icon(
-                icon,
-              size: 18.h,
-            ),
             alignment: Alignment.center,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: AppColors.darkGray,
+            ),
+            child: Icon(
+                icon,
+              size: 18.h,
             ),
           ),
         ),

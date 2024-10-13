@@ -23,7 +23,6 @@ import '../../widgets/app/note_card.dart';
 import '../../widgets/app_app_bar.dart';
 import '../../widgets/app_icon_button.dart';
 import '../../widgets/app_loading_indicator.dart';
-import '../../widgets/app_text.dart';
 import '../login/view.dart';
 import '../note_details/view.dart';
 import '../note_editor/view.dart';

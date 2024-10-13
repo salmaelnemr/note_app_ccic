@@ -41,7 +41,7 @@ class AppTextField extends StatelessWidget {
       validator: validator,
       maxLength: maxLength,
       decoration: InputDecoration(
-        counterStyle: TextStyle(
+        counterStyle: const TextStyle(
           color: AppColors.white,
         ),
         contentPadding: EdgeInsets.zero,

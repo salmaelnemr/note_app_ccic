@@ -23,7 +23,7 @@ class CreateYourFirstNoteVector extends StatelessWidget {
             fit: BoxFit.fill,
           ),
           SizedBox(height: 12.h),
-          AppText(
+          const AppText(
             title: 'Create your first note!',
             fontSize: 20,
             fontWeight: FontWeight.w300,

@@ -1,9 +1,3 @@
-// import 'package:design5/core/dimensions/dimensions.dart';
-// import 'package:design5/core/models/note.dart';
-// //import 'package:design5/features/note_editor/controller.dart';
-// import 'package:design5/widgets/app_app_bar.dart';
-// import 'package:design5/widgets/app_dialog.dart';
-// import 'package:design5/widgets/app_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';

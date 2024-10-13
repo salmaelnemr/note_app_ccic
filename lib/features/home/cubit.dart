@@ -30,7 +30,7 @@ class HomeCubit extends Cubit<HomeStates> {
   }
 
   Future<void> getMoreNotes() async {
-    if (this.state is HomeMoreLoading || currentNotesPage == totalNotesPages){
+    if (state is HomeMoreLoading || currentNotesPage == totalNotesPages){
       return;
     }
     currentNotesPage++;

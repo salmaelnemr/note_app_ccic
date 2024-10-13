@@ -34,7 +34,7 @@ class LoginCubit extends Cubit<LoginStates> {
       await CachingUtils.cacheUser(response.data);
       emit(LoginInit());
       RouteUtils.pushAndPopAll(
-        HomeView(),
+        const HomeView(),
       );
     } on DioException catch (e) {
       showSnackBar(

@@ -1,11 +1,8 @@
-import 'dart:convert';
 import 'dart:math';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:note_app/core/dimensions/dimensions.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/app_colors/app_colors.dart';
 import '../../core/models/note.dart';
@@ -40,11 +37,11 @@ class NoteCard extends StatelessWidget {
         margin: _cardMargin,
         width: double.infinity,
         alignment: Alignment.center,
-        child: Icon(FontAwesomeIcons.trash),
         decoration: BoxDecoration(
           color: AppColors.red,
           borderRadius: _radius,
         ),
+        child: const Icon(FontAwesomeIcons.trash),
       ),
       child: Padding(
         padding: _cardMargin,
@@ -58,15 +55,15 @@ class NoteCard extends StatelessWidget {
             ),
             width: double.infinity,
             alignment: Alignment.center,
-            child: AppText(
-              title: note.title,
-              color: AppColors.black,
-              fontSize: 24,
-            ),
             decoration: BoxDecoration(
               borderRadius: _radius,
               color: Utils
                   .noteColors[Random().nextInt(Utils.noteColors.length - 1)],
+            ),
+            child: AppText(
+              title: note.title,
+              color: AppColors.black,
+              fontSize: 24,
             ),
           ),
         ),

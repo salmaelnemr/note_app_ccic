@@ -23,7 +23,7 @@ class NoSearchResult extends StatelessWidget {
             fit: BoxFit.fill,
           ),
           SizedBox(height: 12.h),
-          AppText(
+          const AppText(
             title: 'Note not found. Try searching again',
             fontSize: 20,
             fontWeight: FontWeight.w300,

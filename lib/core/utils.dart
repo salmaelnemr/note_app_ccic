@@ -9,15 +9,15 @@ class Utils {
   static ThemeData get appTheme {
     return ThemeData(
       fontFamily: 'Nunito',
-      appBarTheme: AppBarTheme(
+      appBarTheme: const AppBarTheme(
         color: AppColors.black,
         elevation: 0.0,
       ),
       canvasColor: AppColors.black,
-      iconTheme: IconThemeData(
+      iconTheme: const IconThemeData(
         color: AppColors.white,
       ),
-      floatingActionButtonTheme: FloatingActionButtonThemeData(
+      floatingActionButtonTheme: const FloatingActionButtonThemeData(
         backgroundColor: AppColors.darkGray,
       ),
     );

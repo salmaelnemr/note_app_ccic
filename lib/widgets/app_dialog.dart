@@ -57,8 +57,8 @@ class AppDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SizedBox(height: 5),
-            Icon(
+            const SizedBox(height: 5),
+            const Icon(
               FontAwesomeIcons.circleInfo,
               color: AppColors.darkGray,
               size: 40,
@@ -96,7 +96,7 @@ class AppDialog extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 12,),
+            const SizedBox(height: 12,),
           ],
         ),
       ),

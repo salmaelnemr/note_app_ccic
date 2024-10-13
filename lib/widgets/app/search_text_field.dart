@@ -17,25 +17,25 @@ class SearchTextField extends StatelessWidget {
       keyboardAppearance: Brightness.dark,
       cursorColor: AppColors.white,
       onChanged: onChanged,
-      style: TextStyle(
+      style: const TextStyle(
         color: AppColors.white,
       ),
       decoration: InputDecoration(
         hintText: 'Search by the keyword...',
-        hintStyle: TextStyle(
+        hintStyle: const TextStyle(
           color: AppColors.gray,
         ),
         suffixIcon: Padding(
           padding: const EdgeInsets.only(right: 12),
           child: InkWell(
             onTap: () => RouteUtils.pop(),
-            child: Icon(
+            child: const Icon(
               Icons.close,
               color: AppColors.white,
             ),
           ),
         ),
-        contentPadding: EdgeInsets.symmetric(horizontal: 24),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 24),
         filled: true,
         fillColor: AppColors.darkGray,
         border: OutlineInputBorder(

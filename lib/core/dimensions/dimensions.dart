@@ -20,10 +20,10 @@ class Dimensions{
 
 extension DimensionsExtension on num{
   double get height{
-    return this.h;
+    return h;
   }
 
   double get width{
-    return this.w;
+    return w;
   }
 }
